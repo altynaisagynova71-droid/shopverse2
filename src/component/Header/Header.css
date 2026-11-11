@@ -1,0 +1,97 @@
+#header{
+    .conteiner{
+        
+        .header{
+            gap: 200px;
+            .About{
+                display: flex;
+                gap: 50px;
+                padding-top: 18px;
+            }
+            .Search{
+                
+                .input1{
+                    border-radius: 25px;
+                    border: none;
+                    background-color: rgb(161, 161, 161);
+                    font-size:20px;
+                    padding: 10px;
+                }
+
+            }
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #header .conteiner {
+        padding: 0 20px;
+    }
+
+    #header .conteiner .header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 16px 24px;
+    }
+
+    #header .conteiner .header .About {
+        gap: 24px;
+        padding-top: 0;
+    }
+
+    #header .conteiner .header .Search .input1 {
+        max-width: 220px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header .conteiner {
+        padding: 0 14px;
+    }
+
+    #header .conteiner .header {
+        justify-content: center;
+        gap: 14px;
+        padding: 14px 0;
+    }
+
+    #header .conteiner .header .shop h1 {
+        font-size: 26px;
+    }
+
+    #header .conteiner .header .About {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        padding-top: 0;
+        font-size: 14px;
+    }
+
+    #header .conteiner .header .Search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #header .conteiner .header .Search .input1 {
+        flex: 1 1 180px;
+        max-width: none;
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    #header .conteiner .header .Search .heart1,
+    #header .conteiner .header .Search .shoping1 {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+}

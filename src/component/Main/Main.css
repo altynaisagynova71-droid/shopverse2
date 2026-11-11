@@ -1,0 +1,315 @@
+#main {
+  .main{
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main2 {
+    
+    background-image: url("/velick.png");
+    width: 100%;
+    height: 658px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+
+    .watch {
+      padding-left: 20px;
+      padding-top: 200px;
+      font-size: 30px;
+      .ultra{
+        color: rgb(255, 255, 255);
+        
+      }
+      .most{
+        color: white;
+        padding-top: 20px;
+      }
+      .button-one{
+        color: white;
+        background-color: orange;
+        border: none;
+        border-radius: 15px;
+        padding: 7px;
+        font-size: 15px;
+      }
+      .button-two{
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: none;
+        border-radius: 15px;
+        padding: 7px;
+        font-size: 15px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .treding{
+    padding-top: 70px;
+    .mobile{
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      padding-top: 20px;
+    }  
+    .text-mobile{
+      display: flex;
+      justify-content: center;
+      gap: 140px;
+      padding-top: 20px;
+    }
+  }
+  .nike-ps{
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+  }
+  .popular{
+    margin-top: 50px;
+    .popular1{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+    .popular2{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+  .sam{
+    
+    padding-top: 100px;
+
+  }
+  .tree{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    .h1{
+      margin-top: 20px;
+    }
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    .footer2{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .div1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .div2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+    }
+  }
+
+
+}
+}
+
+@media (max-width: 900px) {
+  #main > .container {
+    padding: 0 20px;
+  }
+
+  #main .main .main2 {
+    min-height: 520px;
+    height: auto;
+    background-position: center;
+  }
+
+  #main .main .main2 .watch {
+    padding: 130px 20px 40px;
+    font-size: 24px;
+  }
+
+  #main .main .main2 .aplee-watch {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+
+  #main .main .main2 .aplee-watch img {
+    width: min(100%, 380px);
+  }
+
+  #main .main .treding .mobile,
+  #main .main .treding .text-mobile {
+    gap: 24px;
+  }
+
+  #main .main .treding .mobile img {
+    width: 70px;
+    object-fit: contain;
+  }
+
+  #main .main .treding .text-mobile h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #main .main .nike-ps {
+    gap: 16px;
+  }
+
+  #main .main .popular .popular1,
+  #main .main .popular .popular2 {
+    gap: 24px;
+  }
+
+  #main .main .tree {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  #main > .container {
+    padding: 0 14px;
+  }
+
+  #main .main .main2 {
+    min-height: 0;
+    height: auto;
+    flex-direction: column;
+    border-radius: 18px;
+    background-position: center;
+  }
+
+  #main .main .main2 .watch {
+    padding: 36px 20px 0;
+    font-size: 18px;
+  }
+
+  #main .main .main2 .watch .ultra {
+    font-size: clamp(28px, 8vw, 40px);
+  }
+
+  #main .main .main2 .watch .most {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  #main .main .main2 .watch .most br {
+    display: none;
+  }
+
+  #main .main .main2 .watch .button-one,
+  #main .main .main2 .watch .button-two {
+    font-size: 14px;
+  }
+
+  #main .main .main2 .aplee-watch {
+    justify-content: center;
+  }
+
+  #main .main .main2 .aplee-watch img {
+    width: min(80%, 300px);
+  }
+
+  #main .main .treding {
+    padding-top: 44px;
+  }
+
+  #main .main .treding h1,
+  #main .main .popular > h1 {
+    font-size: 26px;
+  }
+
+  #main .main .treding .mobile,
+  #main .main .treding .text-mobile {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+    padding-top: 16px;
+    align-items: center;
+  }
+
+  #main .main .treding .mobile img {
+    width: 100%;
+    max-width: 54px;
+    justify-self: center;
+  }
+
+  #main .main .treding .text-mobile h2 {
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  #main .main .nike-ps {
+    flex-direction: column;
+    margin-top: 44px;
+  }
+
+  #main .main .nike-ps img {
+    width: 100%;
+  }
+
+  #main .main .popular {
+    margin-top: 36px;
+  }
+
+  #main .main .popular .popular1,
+  #main .main .popular .popular2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding-top: 16px;
+  }
+
+  #main .main .sam {
+    padding-top: 48px;
+    width: 100%;
+  }
+
+  #main .main .tree {
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 12px;
+  }
+
+  #main .main .tree h2 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  #main .main .footer {
+    padding: 48px 0 24px;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  #main .main .footer1 h1 {
+    font-size: 24px;
+  }
+
+  #main .main .footer .footer2 {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  #main .main .treding .mobile,
+  #main .main .treding .text-mobile {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #main .main .footer {
+    flex-direction: column;
+  }
+}
